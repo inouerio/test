@@ -1,3 +1,3 @@
-FROM nginx:latest
+FROM alpine:3.16
 
-RUN apt-get update && apt-get install -y iputils-ping
+RUN apk add --no-cache iputils-ping
